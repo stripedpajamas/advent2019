@@ -1,0 +1,11 @@
+{
+  "name": "advent",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "for day in */; do if [[ \"$day\" != \"node_modules/\" ]]; then echo ${day}; node ${day}; fi; done",
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  }
+}
